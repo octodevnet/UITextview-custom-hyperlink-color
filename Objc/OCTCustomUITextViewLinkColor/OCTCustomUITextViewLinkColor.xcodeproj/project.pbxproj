@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AECD90551EA636AD0039A72D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AECD90541EA636AD0039A72D /* main.m */; };
+		AECD90581EA636AD0039A72D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AECD90571EA636AD0039A72D /* AppDelegate.m */; };
+		AECD905B1EA636AD0039A72D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AECD905A1EA636AD0039A72D /* ViewController.m */; };
+		AECD905E1EA636AD0039A72D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECD905C1EA636AD0039A72D /* Main.storyboard */; };
+		AECD90601EA636AD0039A72D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AECD905F1EA636AD0039A72D /* Assets.xcassets */; };
+		AECD90631EA636AD0039A72D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECD90611EA636AD0039A72D /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AECD90501EA636AD0039A72D /* OCTCustomUITextViewLinkColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCTCustomUITextViewLinkColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AECD90541EA636AD0039A72D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AECD90561EA636AD0039A72D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AECD90571EA636AD0039A72D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AECD90591EA636AD0039A72D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AECD905A1EA636AD0039A72D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AECD905D1EA636AD0039A72D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AECD905F1EA636AD0039A72D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AECD90621EA636AD0039A72D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AECD90641EA636AD0039A72D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AECD904D1EA636AD0039A72D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AECD90471EA636AC0039A72D = {
+			isa = PBXGroup;
+			children = (
+				AECD90521EA636AD0039A72D /* OCTCustomUITextViewLinkColor */,
+				AECD90511EA636AD0039A72D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AECD90511EA636AD0039A72D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AECD90501EA636AD0039A72D /* OCTCustomUITextViewLinkColor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AECD90521EA636AD0039A72D /* OCTCustomUITextViewLinkColor */ = {
+			isa = PBXGroup;
+			children = (
+				AECD90561EA636AD0039A72D /* AppDelegate.h */,
+				AECD90571EA636AD0039A72D /* AppDelegate.m */,
+				AECD90591EA636AD0039A72D /* ViewController.h */,
+				AECD905A1EA636AD0039A72D /* ViewController.m */,
+				AECD905C1EA636AD0039A72D /* Main.storyboard */,
+				AECD905F1EA636AD0039A72D /* Assets.xcassets */,
+				AECD90611EA636AD0039A72D /* LaunchScreen.storyboard */,
+				AECD90641EA636AD0039A72D /* Info.plist */,
+				AECD90531EA636AD0039A72D /* Supporting Files */,
+			);
+			path = OCTCustomUITextViewLinkColor;
+			sourceTree = "<group>";
+		};
+		AECD90531EA636AD0039A72D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AECD90541EA636AD0039A72D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AECD904F1EA636AD0039A72D /* OCTCustomUITextViewLinkColor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AECD90671EA636AD0039A72D /* Build configuration list for PBXNativeTarget "OCTCustomUITextViewLinkColor" */;
+			buildPhases = (
+				AECD904C1EA636AD0039A72D /* Sources */,
+				AECD904D1EA636AD0039A72D /* Frameworks */,
+				AECD904E1EA636AD0039A72D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OCTCustomUITextViewLinkColor;
+			productName = OCTCustomUITextViewLinkColor;
+			productReference = AECD90501EA636AD0039A72D /* OCTCustomUITextViewLinkColor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AECD90481EA636AC0039A72D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = dmitry.brovkin;
+				TargetAttributes = {
+					AECD904F1EA636AD0039A72D = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AECD904B1EA636AC0039A72D /* Build configuration list for PBXProject "OCTCustomUITextViewLinkColor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AECD90471EA636AC0039A72D;
+			productRefGroup = AECD90511EA636AD0039A72D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AECD904F1EA636AD0039A72D /* OCTCustomUITextViewLinkColor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AECD904E1EA636AD0039A72D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECD90631EA636AD0039A72D /* LaunchScreen.storyboard in Resources */,
+				AECD90601EA636AD0039A72D /* Assets.xcassets in Resources */,
+				AECD905E1EA636AD0039A72D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AECD904C1EA636AD0039A72D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECD905B1EA636AD0039A72D /* ViewController.m in Sources */,
+				AECD90581EA636AD0039A72D /* AppDelegate.m in Sources */,
+				AECD90551EA636AD0039A72D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AECD905C1EA636AD0039A72D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AECD905D1EA636AD0039A72D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AECD90611EA636AD0039A72D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AECD90621EA636AD0039A72D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AECD90651EA636AD0039A72D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AECD90661EA636AD0039A72D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AECD90681EA636AD0039A72D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OCTCustomUITextViewLinkColor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Octodev.OCTCustomUITextViewLinkColor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AECD90691EA636AD0039A72D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OCTCustomUITextViewLinkColor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Octodev.OCTCustomUITextViewLinkColor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AECD904B1EA636AC0039A72D /* Build configuration list for PBXProject "OCTCustomUITextViewLinkColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECD90651EA636AD0039A72D /* Debug */,
+				AECD90661EA636AD0039A72D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AECD90671EA636AD0039A72D /* Build configuration list for PBXNativeTarget "OCTCustomUITextViewLinkColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECD90681EA636AD0039A72D /* Debug */,
+				AECD90691EA636AD0039A72D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AECD90481EA636AC0039A72D /* Project object */;
+}
