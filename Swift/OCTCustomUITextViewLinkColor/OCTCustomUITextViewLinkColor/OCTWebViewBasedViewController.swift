@@ -24,6 +24,9 @@ class OCTWebViewBasedViewController: UITableViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.jobsWebView.scrollView.bounces = false
+        self.cookWebView.scrollView.bounces = false
+
         self.title = "WebView based controller"
 
         self.loadJobsSpeechHTMLFile()
