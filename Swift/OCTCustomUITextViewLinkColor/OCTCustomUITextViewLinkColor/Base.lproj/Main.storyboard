@@ -1,26 +1,179 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dMf-WS-GDM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="tD7-1C-lNT">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="dMf-WS-GDM" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="bUh-bb-Cip">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9CD-Kn-rvy" kind="relationship" relationship="rootViewController" id="Ylj-KY-kGZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wTb-Ud-Pv9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="198" y="-224"/>
+        </scene>
+        <!--Web View Based View Controller-->
+        <scene sceneID="sOb-Sq-SFg">
+            <objects>
+                <tableViewController id="9CD-Kn-rvy" customClass="OCTWebViewBasedViewController" customModule="OCTCustomUITextViewLinkColor" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="140" sectionHeaderHeight="28" sectionFooterHeight="28" id="8hz-X6-Amd">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection id="WEe-lz-G6h">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="210" id="Akb-yD-s0c">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Akb-yD-s0c" id="Ufb-w8-0lL">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jobs" translatesAutoresizingMaskIntoConstraints="NO" id="YZ4-w5-tqJ">
+                                                    <rect key="frame" x="8" y="132" width="70" height="70"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="8Iy-cQ-QR8"/>
+                                                        <constraint firstAttribute="width" constant="70" id="Gqs-hy-Pvz"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="35"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <webView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3vX-eM-q24">
+                                                    <rect key="frame" x="86" y="8" width="281" height="194"/>
+                                                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="9CD-Kn-rvy" id="QW9-eo-xOg"/>
+                                                    </connections>
+                                                </webView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="3vX-eM-q24" firstAttribute="leading" secondItem="YZ4-w5-tqJ" secondAttribute="trailing" constant="8" id="0cv-xz-FRB"/>
+                                                <constraint firstAttribute="trailing" secondItem="3vX-eM-q24" secondAttribute="trailing" constant="8" id="BYd-5M-MYY"/>
+                                                <constraint firstItem="YZ4-w5-tqJ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Ufb-w8-0lL" secondAttribute="top" constant="8" id="Jpv-7q-DUb"/>
+                                                <constraint firstItem="YZ4-w5-tqJ" firstAttribute="leading" secondItem="Ufb-w8-0lL" secondAttribute="leading" constant="8" id="MRg-Li-fHI"/>
+                                                <constraint firstAttribute="bottom" secondItem="YZ4-w5-tqJ" secondAttribute="bottom" constant="8" id="O8d-hN-ak8"/>
+                                                <constraint firstItem="3vX-eM-q24" firstAttribute="top" secondItem="Ufb-w8-0lL" secondAttribute="top" constant="8" id="djr-Hq-J7Q"/>
+                                                <constraint firstAttribute="bottom" secondItem="3vX-eM-q24" secondAttribute="bottom" constant="8" id="gxm-sn-zQ1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="200" id="HHs-Wg-QGz">
+                                        <rect key="frame" x="0.0" y="210" width="375" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HHs-Wg-QGz" id="PDj-rG-kU4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cook" translatesAutoresizingMaskIntoConstraints="NO" id="YMx-m5-fWV">
+                                                    <rect key="frame" x="297" y="122" width="70" height="70"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="MNQ-df-bQm"/>
+                                                        <constraint firstAttribute="width" constant="70" id="bsf-Xk-dhD"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="35"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <webView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ljq-8D-Rg3">
+                                                    <rect key="frame" x="8" y="8" width="281" height="184"/>
+                                                    <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="9CD-Kn-rvy" id="vyK-7g-SLZ"/>
+                                                    </connections>
+                                                </webView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="YMx-m5-fWV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="PDj-rG-kU4" secondAttribute="top" constant="8" id="CYd-wj-A2e"/>
+                                                <constraint firstAttribute="bottom" secondItem="YMx-m5-fWV" secondAttribute="bottom" constant="8" id="Qgu-GY-JVP"/>
+                                                <constraint firstItem="ljq-8D-Rg3" firstAttribute="leading" secondItem="PDj-rG-kU4" secondAttribute="leading" constant="8" id="aVI-sf-0Bw"/>
+                                                <constraint firstAttribute="trailing" secondItem="YMx-m5-fWV" secondAttribute="trailing" constant="8" id="dm6-0a-FyT"/>
+                                                <constraint firstItem="ljq-8D-Rg3" firstAttribute="top" secondItem="PDj-rG-kU4" secondAttribute="top" constant="8" id="enk-iL-rlC"/>
+                                                <constraint firstItem="YMx-m5-fWV" firstAttribute="leading" secondItem="ljq-8D-Rg3" secondAttribute="trailing" constant="8" id="evn-8S-KJZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="ljq-8D-Rg3" secondAttribute="bottom" constant="8" id="h36-FN-iGm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="9CD-Kn-rvy" id="Odg-Y4-QoD"/>
+                            <outlet property="delegate" destination="9CD-Kn-rvy" id="616-90-l44"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="sH7-9V-hG3"/>
+                    <connections>
+                        <outlet property="cookWebView" destination="ljq-8D-Rg3" id="c2U-vJ-lOz"/>
+                        <outlet property="jobsWebView" destination="3vX-eM-q24" id="vmg-mU-Eai"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LaK-vY-K3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1308" y="-488"/>
+        </scene>
+        <!--Text View Based View Controller-->
+        <scene sceneID="vs9-RT-EXH">
+            <objects>
+                <viewController id="v4T-GC-LTw" customClass="OCTTextViewBasedViewController" customModule="OCTCustomUITextViewLinkColor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="E5r-Jq-KfD"/>
+                        <viewControllerLayoutGuide type="bottom" id="iW3-d7-KZP"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="iVB-Eu-fMN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JSf-xS-8b0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1308" y="262"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cook" width="575" height="657"/>
+        <image name="jobs" width="465" height="600"/>
+    </resources>
 </document>

@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AEBC22691EA773CE00B64AFB /* OCTWebViewBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC22671EA773CE00B64AFB /* OCTWebViewBasedViewController.swift */; };
+		AEBC226D1EA773DE00B64AFB /* OCTTextViewBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC226B1EA773DE00B64AFB /* OCTTextViewBasedViewController.swift */; };
+		AEBC22761EA7859A00B64AFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBC22741EA7859A00B64AFB /* Main.storyboard */; };
+		AEBC22841EA7A6A600B64AFB /* cook_complete_speech.html in Resources */ = {isa = PBXBuildFile; fileRef = AEBC227F1EA7A6A600B64AFB /* cook_complete_speech.html */; };
+		AEBC22851EA7A6A600B64AFB /* jobs_completed_speech.html in Resources */ = {isa = PBXBuildFile; fileRef = AEBC22811EA7A6A600B64AFB /* jobs_completed_speech.html */; };
+		AEBC22861EA7A6A600B64AFB /* original_speech.txt in Resources */ = {isa = PBXBuildFile; fileRef = AEBC22821EA7A6A600B64AFB /* original_speech.txt */; };
+		AEBC22871EA7A6A600B64AFB /* template.html in Resources */ = {isa = PBXBuildFile; fileRef = AEBC22831EA7A6A600B64AFB /* template.html */; };
 		AECD90361EA636630039A72D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECD90351EA636630039A72D /* AppDelegate.swift */; };
-		AECD90381EA636630039A72D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECD90371EA636630039A72D /* ViewController.swift */; };
-		AECD903B1EA636630039A72D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECD90391EA636630039A72D /* Main.storyboard */; };
 		AECD903D1EA636630039A72D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AECD903C1EA636630039A72D /* Assets.xcassets */; };
 		AECD90401EA636630039A72D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECD903E1EA636630039A72D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AEBC22671EA773CE00B64AFB /* OCTWebViewBasedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCTWebViewBasedViewController.swift; sourceTree = "<group>"; };
+		AEBC226B1EA773DE00B64AFB /* OCTTextViewBasedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCTTextViewBasedViewController.swift; sourceTree = "<group>"; };
+		AEBC22751EA7859A00B64AFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AEBC227F1EA7A6A600B64AFB /* cook_complete_speech.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = cook_complete_speech.html; sourceTree = "<group>"; };
+		AEBC22811EA7A6A600B64AFB /* jobs_completed_speech.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jobs_completed_speech.html; sourceTree = "<group>"; };
+		AEBC22821EA7A6A600B64AFB /* original_speech.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = original_speech.txt; sourceTree = "<group>"; };
+		AEBC22831EA7A6A600B64AFB /* template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = template.html; sourceTree = "<group>"; };
 		AECD90321EA636630039A72D /* OCTCustomUITextViewLinkColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCTCustomUITextViewLinkColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECD90351EA636630039A72D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AECD90371EA636630039A72D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AECD903A1EA636630039A72D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AECD903C1EA636630039A72D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AECD903F1EA636630039A72D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AECD90411EA636630039A72D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,10 +45,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AEBC227D1EA7A6A600B64AFB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AEBC227E1EA7A6A600B64AFB /* Cook */,
+				AEBC22801EA7A6A600B64AFB /* Jobs */,
+				AEBC22831EA7A6A600B64AFB /* template.html */,
+			);
+			name = Resources;
+			path = OCTCustomUITextViewLinkColor/Resources;
+			sourceTree = "<group>";
+		};
+		AEBC227E1EA7A6A600B64AFB /* Cook */ = {
+			isa = PBXGroup;
+			children = (
+				AEBC227F1EA7A6A600B64AFB /* cook_complete_speech.html */,
+			);
+			path = Cook;
+			sourceTree = "<group>";
+		};
+		AEBC22801EA7A6A600B64AFB /* Jobs */ = {
+			isa = PBXGroup;
+			children = (
+				AEBC22811EA7A6A600B64AFB /* jobs_completed_speech.html */,
+				AEBC22821EA7A6A600B64AFB /* original_speech.txt */,
+			);
+			path = Jobs;
+			sourceTree = "<group>";
+		};
 		AECD90291EA636630039A72D = {
 			isa = PBXGroup;
 			children = (
 				AECD90341EA636630039A72D /* OCTCustomUITextViewLinkColor */,
+				AEBC227D1EA7A6A600B64AFB /* Resources */,
 				AECD90331EA636630039A72D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,10 +93,11 @@
 		AECD90341EA636630039A72D /* OCTCustomUITextViewLinkColor */ = {
 			isa = PBXGroup;
 			children = (
+				AEBC22671EA773CE00B64AFB /* OCTWebViewBasedViewController.swift */,
+				AEBC226B1EA773DE00B64AFB /* OCTTextViewBasedViewController.swift */,
 				AECD90351EA636630039A72D /* AppDelegate.swift */,
-				AECD90371EA636630039A72D /* ViewController.swift */,
-				AECD90391EA636630039A72D /* Main.storyboard */,
 				AECD903C1EA636630039A72D /* Assets.xcassets */,
+				AEBC22741EA7859A00B64AFB /* Main.storyboard */,
 				AECD903E1EA636630039A72D /* LaunchScreen.storyboard */,
 				AECD90411EA636630039A72D /* Info.plist */,
 			);
@@ -123,9 +163,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEBC22851EA7A6A600B64AFB /* jobs_completed_speech.html in Resources */,
+				AEBC22861EA7A6A600B64AFB /* original_speech.txt in Resources */,
+				AEBC22871EA7A6A600B64AFB /* template.html in Resources */,
 				AECD90401EA636630039A72D /* LaunchScreen.storyboard in Resources */,
+				AEBC22761EA7859A00B64AFB /* Main.storyboard in Resources */,
 				AECD903D1EA636630039A72D /* Assets.xcassets in Resources */,
-				AECD903B1EA636630039A72D /* Main.storyboard in Resources */,
+				AEBC22841EA7A6A600B64AFB /* cook_complete_speech.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,18 +180,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AECD90381EA636630039A72D /* ViewController.swift in Sources */,
+				AEBC22691EA773CE00B64AFB /* OCTWebViewBasedViewController.swift in Sources */,
 				AECD90361EA636630039A72D /* AppDelegate.swift in Sources */,
+				AEBC226D1EA773DE00B64AFB /* OCTTextViewBasedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AECD90391EA636630039A72D /* Main.storyboard */ = {
+		AEBC22741EA7859A00B64AFB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AECD903A1EA636630039A72D /* Base */,
+				AEBC22751EA7859A00B64AFB /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -267,6 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Octodev.OCTCustomUITextViewLinkColor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -279,6 +325,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Octodev.OCTCustomUITextViewLinkColor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -301,6 +348,7 @@
 				AECD90461EA636630039A72D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
