@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40F5C2581EA930230058D551 /* OCTTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F5C2571EA930230058D551 /* OCTTextView.swift */; };
 		AEBC22691EA773CE00B64AFB /* OCTWebViewBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC22671EA773CE00B64AFB /* OCTWebViewBasedViewController.swift */; };
 		AEBC226D1EA773DE00B64AFB /* OCTTextViewBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC226B1EA773DE00B64AFB /* OCTTextViewBasedViewController.swift */; };
 		AEBC22761EA7859A00B64AFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBC22741EA7859A00B64AFB /* Main.storyboard */; };
 		AEBC22841EA7A6A600B64AFB /* cook_complete_speech.html in Resources */ = {isa = PBXBuildFile; fileRef = AEBC227F1EA7A6A600B64AFB /* cook_complete_speech.html */; };
 		AEBC22851EA7A6A600B64AFB /* jobs_completed_speech.html in Resources */ = {isa = PBXBuildFile; fileRef = AEBC22811EA7A6A600B64AFB /* jobs_completed_speech.html */; };
-		AEBC22861EA7A6A600B64AFB /* original_speech.txt in Resources */ = {isa = PBXBuildFile; fileRef = AEBC22821EA7A6A600B64AFB /* original_speech.txt */; };
+		AEBC22861EA7A6A600B64AFB /* jobs_original_speech.txt in Resources */ = {isa = PBXBuildFile; fileRef = AEBC22821EA7A6A600B64AFB /* jobs_original_speech.txt */; };
 		AEBC22871EA7A6A600B64AFB /* template.html in Resources */ = {isa = PBXBuildFile; fileRef = AEBC22831EA7A6A600B64AFB /* template.html */; };
 		AECD90361EA636630039A72D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECD90351EA636630039A72D /* AppDelegate.swift */; };
 		AECD903D1EA636630039A72D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AECD903C1EA636630039A72D /* Assets.xcassets */; };
@@ -20,12 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40F5C2571EA930230058D551 /* OCTTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCTTextView.swift; sourceTree = "<group>"; };
 		AEBC22671EA773CE00B64AFB /* OCTWebViewBasedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCTWebViewBasedViewController.swift; sourceTree = "<group>"; };
 		AEBC226B1EA773DE00B64AFB /* OCTTextViewBasedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCTTextViewBasedViewController.swift; sourceTree = "<group>"; };
 		AEBC22751EA7859A00B64AFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEBC227F1EA7A6A600B64AFB /* cook_complete_speech.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = cook_complete_speech.html; sourceTree = "<group>"; };
 		AEBC22811EA7A6A600B64AFB /* jobs_completed_speech.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jobs_completed_speech.html; sourceTree = "<group>"; };
-		AEBC22821EA7A6A600B64AFB /* original_speech.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = original_speech.txt; sourceTree = "<group>"; };
+		AEBC22821EA7A6A600B64AFB /* jobs_original_speech.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jobs_original_speech.txt; sourceTree = "<group>"; };
 		AEBC22831EA7A6A600B64AFB /* template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = template.html; sourceTree = "<group>"; };
 		AECD90321EA636630039A72D /* OCTCustomUITextViewLinkColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCTCustomUITextViewLinkColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECD90351EA636630039A72D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				AEBC22811EA7A6A600B64AFB /* jobs_completed_speech.html */,
-				AEBC22821EA7A6A600B64AFB /* original_speech.txt */,
+				AEBC22821EA7A6A600B64AFB /* jobs_original_speech.txt */,
 			);
 			path = Jobs;
 			sourceTree = "<group>";
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				AEBC22671EA773CE00B64AFB /* OCTWebViewBasedViewController.swift */,
+				40F5C2571EA930230058D551 /* OCTTextView.swift */,
 				AEBC226B1EA773DE00B64AFB /* OCTTextViewBasedViewController.swift */,
 				AECD90351EA636630039A72D /* AppDelegate.swift */,
 				AECD903C1EA636630039A72D /* Assets.xcassets */,
@@ -164,7 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEBC22851EA7A6A600B64AFB /* jobs_completed_speech.html in Resources */,
-				AEBC22861EA7A6A600B64AFB /* original_speech.txt in Resources */,
+				AEBC22861EA7A6A600B64AFB /* jobs_original_speech.txt in Resources */,
 				AEBC22871EA7A6A600B64AFB /* template.html in Resources */,
 				AECD90401EA636630039A72D /* LaunchScreen.storyboard in Resources */,
 				AEBC22761EA7859A00B64AFB /* Main.storyboard in Resources */,
@@ -182,6 +185,7 @@
 			files = (
 				AEBC22691EA773CE00B64AFB /* OCTWebViewBasedViewController.swift in Sources */,
 				AECD90361EA636630039A72D /* AppDelegate.swift in Sources */,
+				40F5C2581EA930230058D551 /* OCTTextView.swift in Sources */,
 				AEBC226D1EA773DE00B64AFB /* OCTTextViewBasedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

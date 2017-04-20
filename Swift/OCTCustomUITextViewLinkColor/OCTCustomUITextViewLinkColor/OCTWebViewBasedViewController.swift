@@ -53,11 +53,11 @@ class OCTWebViewBasedViewController: UITableViewController, UIWebViewDelegate {
     private func loadJobsSpeechHTMLTemplateFile() {
         let linkUrl = "http://yourlinkhere.com"
         
-        let url = Bundle.main.url(forResource: "original", withExtension: "txt")
+        let url = Bundle.main.url(forResource: "jobs_original_speech", withExtension: "txt")
         var text = try! String(contentsOf: url!, encoding: String.Encoding.utf8)
         
         text.addLink(linkUrl, linkHexColor: "#e1c428", text: "universities in the world")
-        text.addLink(linkUrl, linkHexColor: "#267d6c", text: "college graduation")
+        text.addLink(linkUrl, linkHexColor: "#33ff00", text: "college graduation")
         text.addLink(linkUrl, linkHexColor: "#f90023", text: "three stories")
         
         let htmlFileUrl = Bundle.main.url(forResource: "template", withExtension: "html")
