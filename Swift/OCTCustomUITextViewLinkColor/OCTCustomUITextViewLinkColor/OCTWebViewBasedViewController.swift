@@ -15,6 +15,7 @@ extension String {
     }
 }
 
+private let kLinkUrl = "http://yourlinkhere.com"
 
 class OCTWebViewBasedViewController: UITableViewController, UIWebViewDelegate {
     @IBOutlet weak var jobsWebView: UIWebView!
@@ -29,8 +30,8 @@ class OCTWebViewBasedViewController: UITableViewController, UIWebViewDelegate {
 
         self.title = "WebView based controller"
 
-        self.loadJobsSpeechHTMLFile()
-        self.loadCookSpeechHTMLFile()
+        self.loadJobsSpeech()
+        self.loadCookSpeech()
     }
     
     //MARK: UIWebViewDelegate methods
@@ -40,25 +41,23 @@ class OCTWebViewBasedViewController: UITableViewController, UIWebViewDelegate {
     }
     
     //MARK: Private methods
-    private func loadJobsSpeechHTMLFile() {
+    private func loadJobsSpeech() {
         let url = Bundle.main.url(forResource: "jobs_completed_speech", withExtension: "html")
         self.jobsWebView.loadRequest(URLRequest(url: url!))
     }
     
-    private func loadCookSpeechHTMLFile() {
+    private func loadCookSpeech() {
         let url = Bundle.main.url(forResource: "cook_complete_speech", withExtension: "html")
         self.cookWebView.loadRequest(URLRequest(url: url!))
     }
     
-    private func loadJobsSpeechHTMLTemplateFile() {
-        let linkUrl = "http://yourlinkhere.com"
-        
+    private func loadFormattedJobsSpeech() {
         let url = Bundle.main.url(forResource: "jobs_original_speech", withExtension: "txt")
         var text = try! String(contentsOf: url!, encoding: String.Encoding.utf8)
         
-        text.addLink(linkUrl, linkHexColor: "#e1c428", text: "universities in the world")
-        text.addLink(linkUrl, linkHexColor: "#33ff00", text: "college graduation")
-        text.addLink(linkUrl, linkHexColor: "#f90023", text: "three stories")
+        text.addLink(kLinkUrl, linkHexColor: "#e1c428", text: "universities in the world")
+        text.addLink(kLinkUrl, linkHexColor: "#33ff00", text: "college graduation")
+        text.addLink(kLinkUrl, linkHexColor: "#f90023", text: "three stories")
         
         let htmlFileUrl = Bundle.main.url(forResource: "template", withExtension: "html")
         var htmlText = try! String(contentsOf: htmlFileUrl!, encoding: String.Encoding.utf8)
