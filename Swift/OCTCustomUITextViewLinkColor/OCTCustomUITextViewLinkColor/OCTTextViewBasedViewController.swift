@@ -33,8 +33,8 @@ private let gRedColor = UIColor(red: 249.0/255.0, green: 0.0/255.0, blue: 35.0/2
 
 
 class OCTTextViewBasedViewController: UITableViewController, UITextViewDelegate {
-    @IBOutlet weak var jobsTextView: UITextView!
-    @IBOutlet weak var cookTextView: UITextView!
+    @IBOutlet weak var jobsTextView: OCTTextView!
+    @IBOutlet weak var cookTextView: OCTTextView!
     
     //MARK: Life cycle
     override func viewDidLoad() {
