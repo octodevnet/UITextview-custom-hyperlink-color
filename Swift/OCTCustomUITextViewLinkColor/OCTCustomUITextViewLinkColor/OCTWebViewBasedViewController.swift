@@ -17,6 +17,11 @@ extension String {
 
 private let kLinkUrl = "http://yourlinkhere.com"
 
+private let kYelowColor = "#e1c428"
+private let kGreenColor = "#33ff00"
+private let kRedColor = "#f90023"
+
+
 class OCTWebViewBasedViewController: UITableViewController, UIWebViewDelegate {
     @IBOutlet weak var jobsWebView: UIWebView!
     @IBOutlet weak var cookWebView: UIWebView!
@@ -55,9 +60,9 @@ class OCTWebViewBasedViewController: UITableViewController, UIWebViewDelegate {
         let url = Bundle.main.url(forResource: "jobs_original_speech", withExtension: "txt")
         var text = try! String(contentsOf: url!, encoding: String.Encoding.utf8)
         
-        text.addLink(kLinkUrl, linkHexColor: "#e1c428", text: "universities in the world")
-        text.addLink(kLinkUrl, linkHexColor: "#33ff00", text: "college graduation")
-        text.addLink(kLinkUrl, linkHexColor: "#f90023", text: "three stories")
+        text.addLink(kLinkUrl, linkHexColor: kYelowColor, text: "universities in the world")
+        text.addLink(kLinkUrl, linkHexColor: kGreenColor, text: "college graduation")
+        text.addLink(kLinkUrl, linkHexColor: kRedColor, text: "three stories")
         
         let htmlFileUrl = Bundle.main.url(forResource: "template", withExtension: "html")
         var htmlText = try! String(contentsOf: htmlFileUrl!, encoding: String.Encoding.utf8)
