@@ -48,8 +48,8 @@ static NSString *const kLinkUrl = @"http://yourlinkhere.com";
 
 @interface OCTTextViewBasedViewController () <UITextViewDelegate>
 
-@property (nonatomic, weak) IBOutlet UITextView *jobsTextView;
-@property (nonatomic, weak) IBOutlet UITextView *cookTextView;
+@property (nonatomic, weak) IBOutlet OCTTextView *jobsTextView;
+@property (nonatomic, weak) IBOutlet OCTTextView *cookTextView;
 
 @end
 

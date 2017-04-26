@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-static NSString *const OCTLinkAttributeName = @"OCTLinkAttributeName";
+extern NSString * const OCTLinkAttributeName;
 
 @interface OCTTextView : UITextView
 
