@@ -12,7 +12,7 @@ let OCTLinkAttributeName = "OCTLinkAttributeName"
 
 class OCTTextView: UITextView {
     
-    private let linksAttributes = [OCTLinkAttributeName, NSLinkAttributeName]
+    private let _linksAttributes = [OCTLinkAttributeName, NSLinkAttributeName]
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,7 +28,7 @@ class OCTTextView: UITextView {
         if charIndex < self.textStorage.length {
             var range = NSMakeRange(0, 0)
             
-            for linkAttribute in linksAttributes {
+            for linkAttribute in _linksAttributes {
                 if let link = self.attributedText.attribute(linkAttribute, at: charIndex, effectiveRange: &range) as? String {
                     _ = self.delegate?.textView?(self, shouldInteractWith: URL(string: link)!, in: range, interaction: .invokeDefaultAction)
                 }
