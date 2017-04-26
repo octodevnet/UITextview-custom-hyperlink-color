@@ -27,7 +27,7 @@ extension NSMutableAttributedString {
 
 private let kLinkUrl = "http://yourlinkhere.com"
 
-private let kYelowColor = UIColor(red: 225.0/255.0, green: 196.0/255.0, blue: 40.0/255.0, alpha: 1)
+private let kYellowColor = UIColor(red: 225.0/255.0, green: 196.0/255.0, blue: 40.0/255.0, alpha: 1)
 private let kGreenColor = UIColor(red: 51.0/255.0, green: 255.0/255.0, blue: 0.0/255.0, alpha: 1)
 private let kRedColor = UIColor(red: 249.0/255.0, green: 0.0/255.0, blue: 35.0/255.0, alpha: 1)
 
@@ -57,7 +57,7 @@ class OCTTextViewBasedViewController: UITableViewController, UITextViewDelegate 
         let text = try! String(contentsOf: url!, encoding: String.Encoding.utf8)
         let attributedString = NSMutableAttributedString(string: text)
         
-        attributedString.addLink(kLinkUrl, linkColor: kYelowColor, text: "universities in the world")
+        attributedString.addLink(kLinkUrl, linkColor: kYellowColor, text: "universities in the world")
         attributedString.addLink(kLinkUrl, linkColor: kGreenColor, text: "college graduation")
         attributedString.addLink(kLinkUrl, linkColor: kRedColor, text: "three stories")
         attributedString.addAttribute(NSFontAttributeName, value: UIFont.systemFont(ofSize: 16),
@@ -71,7 +71,7 @@ class OCTTextViewBasedViewController: UITableViewController, UITextViewDelegate 
         let text = try! String(contentsOf: url!, encoding: String.Encoding.utf8)
         let attributedString = NSMutableAttributedString(string: text)
         
-        attributedString.addLink(kLinkUrl, linkColor: kYelowColor, text: "company")
+        attributedString.addLink(kLinkUrl, linkColor: kYellowColor, text: "company")
         attributedString.addLink(kLinkUrl, linkColor: kGreenColor, text: "individual")
         attributedString.addLink(kLinkUrl, linkColor: kRedColor, text: "North Star")
         attributedString.addAttribute(NSFontAttributeName, value: UIFont.systemFont(ofSize: 16),
