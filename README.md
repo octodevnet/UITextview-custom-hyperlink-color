@@ -6,4 +6,4 @@ UITextView is a powerful instrument, provided by UIKit, which is used at least o
 <img class="aligncenter wp-image-2674 " src="https://octodev.net/wp-content/uploads/2017/04/expected_result.jpg" alt="" width="454" height="825" />
 
 <h2>Implementation</h2>
-Prease find full tutorial at the <a href=" https://octodev.net/changing-uitextview-hyperlink-color/" target="_blank">following link</a>.
+Prease find full tutorial at the <a href="https://octodev.net/changing-uitextview-hyperlink-color/" target="_blank">following link</a>.
