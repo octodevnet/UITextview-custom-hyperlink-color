@@ -12,7 +12,7 @@ let OCTLinkAttributeName = "OCTLinkAttributeName"
 
 class OCTTextView: UITextView {
     
-    private let _linksAttributes = [OCTLinkAttributeName, NSLinkAttributeName]
+    private let _linksAttributes = [NSAttributedStringKey(rawValue: OCTLinkAttributeName), NSAttributedStringKey.link]
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -16,11 +16,11 @@ extension NSMutableAttributedString {
                                                   options: NSRegularExpression.Options(rawValue: 0))
         let matches = regex.matches(in: self.string,
                                     options: NSRegularExpression.MatchingOptions(rawValue: 0),
-                                    range: NSRange.init(location: 0, length: self.string.characters.count))
+                                    range: NSRange.init(location: 0, length: self.string.count))
         
         for result in matches {
-            self.addAttribute(OCTLinkAttributeName, value: link, range: result.rangeAt(0))
-            self.addAttribute(NSForegroundColorAttributeName, value: linkColor, range: result.rangeAt(0))
+            self.addAttribute(NSAttributedStringKey(rawValue: OCTLinkAttributeName), value: link, range: result.range(at: 0))
+            self.addAttribute(NSAttributedStringKey.foregroundColor, value: linkColor, range: result.range(at: 0))
         }
     }
 }
@@ -60,8 +60,8 @@ class OCTTextViewBasedViewController: UITableViewController, UITextViewDelegate 
         attributedString.addLink(kLinkUrl, linkColor: kYellowColor, text: "universities in the world")
         attributedString.addLink(kLinkUrl, linkColor: kGreenColor, text: "college graduation")
         attributedString.addLink(kLinkUrl, linkColor: kRedColor, text: "three stories")
-        attributedString.addAttribute(NSFontAttributeName, value: UIFont.systemFont(ofSize: 16),
-                                      range: NSRange.init(location: 0, length: attributedString.string.characters.count))
+        attributedString.addAttribute(NSAttributedStringKey.font, value: UIFont.systemFont(ofSize: 16),
+                                      range: NSRange.init(location: 0, length: attributedString.string.count))
         
         self.jobsTextView.attributedText = attributedString
     }
@@ -74,8 +74,8 @@ class OCTTextViewBasedViewController: UITableViewController, UITextViewDelegate 
         attributedString.addLink(kLinkUrl, linkColor: kYellowColor, text: "company")
         attributedString.addLink(kLinkUrl, linkColor: kGreenColor, text: "individual")
         attributedString.addLink(kLinkUrl, linkColor: kRedColor, text: "North Star")
-        attributedString.addAttribute(NSFontAttributeName, value: UIFont.systemFont(ofSize: 16),
-                                      range: NSRange.init(location: 0, length: attributedString.string.characters.count))
+        attributedString.addAttribute(NSAttributedStringKey.font, value: UIFont.systemFont(ofSize: 16),
+                                      range: NSRange.init(location: 0, length: attributedString.string.count))
         
         self.cookTextView.attributedText = attributedString
     }
